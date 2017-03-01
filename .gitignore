@@ -12,3 +12,5 @@ node_modules
 # vscode settings
 .vscode
 
+# Output
+dist

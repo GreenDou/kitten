@@ -1,20 +1,27 @@
+// import { createStore } from 'redux';
 import * as React from 'react';
-import { connect } from 'react-redux';
+import { render } from 'react-dom';
+// import { Provider } from 'react-redux';
+// TODO: Check @types/react-intl if they fix the problem of 2.1.1
+// import { IntlProvider } from 'react-intl';
 
-interface IComponentNameProps { };
+// on_loaded(() => {
+// TODO: Maybe use 'react-intl-redux' to switch locale and message on request?
+// load_locale_data((locale, msg) => {
+render(
+  // <Provider store={createStore}>
+    // <IntlProvider
+      // locale={locale}
+      // messages={msg}
+    // >
+      <div>Hello!</div>
+        // </IntlProvider>
+  // </Provider>
+  ,
+  document.getElementById('root'));
+  // })
 
-interface IComponentNameState { };
+// });
 
-class ComponentName extends React.Component<IComponentNameProps, IComponentNameState> {
-  public render(): any {
-    return (<span>Body</span>);
-  }
-}
+// initiate_load();
 
-export default connect(
-  (state) => ({
-    // Map state to props
-  }),
-  {
-    // Map dispatch to props
-  })(ComponentName);

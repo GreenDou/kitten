@@ -1,4 +1,6 @@
 let path = require('path');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+
 let webpack_config = {
   entry: {
     game: './src/index.tsx',
@@ -33,6 +35,12 @@ let webpack_config = {
   },
   devtool: 'cheap-eval-source-map',
   context: __dirname,
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.min.html',
+      template: 'src/index.html'
+    })
+  ],
 };
 
 module.exports = webpack_config;

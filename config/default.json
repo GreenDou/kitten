@@ -1,0 +1,10 @@
+{
+  "server": {
+    "port": "3030",
+    "https": {
+      "enabled": false,
+      "crt": "",
+      "key": ""
+    }
+  }
+}

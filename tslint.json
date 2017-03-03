@@ -58,6 +58,12 @@
     "no-increment-decrement": true,
     "object-literal-surrounding-space": true,
     "no-type-assertion-whitespace": true,
-    "no-in-operator": true
+    "no-in-operator": true,
+    "no-unused-variable": [
+      true,
+      "react"
+    ],
+    "no-unused-expression": true,
+    "no-unused-new": true
   }
 }

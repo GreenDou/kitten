@@ -14,7 +14,7 @@ render(
       // locale={locale}
       // messages={msg}
     // >
-      <div>Hello!</div>
+      <div>Hello World!</div>
         // </IntlProvider>
   // </Provider>
   ,
@@ -24,4 +24,3 @@ render(
 // });
 
 // initiate_load();
-

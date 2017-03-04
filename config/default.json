@@ -1,5 +1,6 @@
 {
   "server": {
+    "use_cdn": false,
     "port": "3030",
     "https": {
       "enabled": false,

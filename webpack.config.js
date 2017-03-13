@@ -52,7 +52,7 @@ if (dev_mode) {
     new webpack.NamedModulesPlugin(),
   ]);
 
-  devtool = 'cheap-eval-source-map';
+  devtool = 'eval-source-map';
 }
 
 /**
